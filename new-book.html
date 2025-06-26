@@ -54,22 +54,25 @@
         </div>
 
         <form action="" class="d-flex flex-wrap">
-          <div class="col-6 mt-4">
+          <div class="col-6 mt-4 pe-">
             <label for="Nome Autore" class="form-label fw-bold">Nome Autore</label>
-            <input type="text" class="form-control" id="Nome Autore" placeholder="Inserisci il nome">
+            <input type="text" class="form-control" id="Nome Autore" placeholder="Inserisci il nome" minlength="3"
+              maxlength="20">
           </div>
           <div class="col-6 mt-4">
             <label for="Cognome Autore" class="form-label fw-bold">Cognome Autore</label>
-            <input type="text" class="form-control" id="Cognome Autore" placeholder="Inserisci il Cognome">
+            <input type="text" class="form-control" id="Cognome Autore" placeholder="Inserisci il Cognome" minlength="3"
+              maxlength="20">
           </div>
 
           <div class="col-12 mt-4">
             <label for="Titolo" class="form-label fw-bold">Titolo</label>
-            <input type="text" class="form-control" id="Titolo" placeholder="Inserisci il titolo del libro">
+            <input type="text" class="form-control" id="Titolo" placeholder="Inserisci il titolo del libro"
+              minlength="3" maxlength="50">
             <div id="titleHelp" class="form-text">Titolo versione italiana</div>
           </div>
 
-          <div class="col-12 col-lg-4 mt-4">
+          <div class="col-12 col-lg-4 mt-4 pe-4">
             <label for="" class="form-label fw-bold">Genere</label>
             <select class="form-select">
               <option>Scegli il genere</option>
@@ -83,14 +86,16 @@
             </select>
           </div>
 
-          <div class="col-12 col-lg-4 mt-4">
+          <div class="col-12 col-lg-4 mt-4 pe-4">
             <label for="Anno di Pubblicazione" class="form-label fw-bold">Anno di Pubblicazione</label>
-            <input type="text" class="form-control" id="Anno di Pubblicazione" placeholder="Inserisci l'anno">
+            <input type="text" class="form-control" id="Anno di Pubblicazione" placeholder="Inserisci l'anno"
+              maxlength="4">
           </div>
 
           <div class="col-12 col-lg-4 mt-4 mb-5">
             <label for="ISBN#" class="form-label fw-bold">ISBN#</label>
-            <input type="text" class="form-control" id="ISBN#" placeholder="Inserisci il codice ISBN#">
+            <input type="text" class="form-control" id="ISBN#" placeholder="Inserisci il codice ISBN#" minlength="13"
+              maxlength="13">
           </div>
 
           <hr>
@@ -98,7 +103,7 @@
           <div class="col-12 mt-4">
             <label for="Note" class="form-label fw-bold">Note</label>
             <textarea class="form-control" id="Note" rows="3"
-              placeholder="Inserisci eventuali note sul libro"></textarea>
+              placeholder="Inserisci eventuali note sul libro(max-200 caratteri)" maxlength="200"></textarea>
           </div>
 
           <div>
