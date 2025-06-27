@@ -53,7 +53,7 @@
           <h2>Nuovo Libro</h2>
         </div>
 
-        <form action="">
+        <form action="" method="post">
           <div class="row">
             <div class="col-6 mt-4">
               <label for="Nome Autore" class="form-label fw-bold">Nome Autore</label>
@@ -89,8 +89,9 @@
 
             <div class="col-12 col-md-6 col-lg-4 mt-4">
               <label for="Anno di Pubblicazione" class="form-label fw-bold">Anno di Pubblicazione</label>
-              <input type="text" class="form-control" id="Anno di Pubblicazione" placeholder="Inserisci l'anno"
-                maxlength="4">
+              <input type="text" class="form-control" id="Anno di Pubblicazione" placeholder="Inserisci l'anno" 
+              minlength="4"
+              maxlength="4">
             </div>
 
             <div class="col-12 col-lg-4 mt-4 mb-5">
